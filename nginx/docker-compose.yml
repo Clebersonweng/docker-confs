@@ -22,7 +22,8 @@ services:
       XDEBUG_MODE: develop,debug
       XDEBUG_CONFIG: client_host=host.docker.internal client_port=9003
     volumes:
-      - ./src/:/var/www/html
+     # - ./src/:/var/www/html
+      - /Users/cleberson/Documents/proyectos/php/erp/:/var/www/html
       - ./php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
     extra_hosts:
       - "host.docker.internal:host-gateway"
